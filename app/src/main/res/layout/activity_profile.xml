@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/input_bg1"
+    android:layout_height="match_parent"
+    tools:context=".Profile.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/pic_profile"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit_profile"
+        style="@style/SpinKitView.Large.ChasingDots"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#C50909" />
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/pic_profile"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/userName_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/userName_ET_profile"
+                android:layout_width="130dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/userName_TV_profile"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="User Name   "
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/pic_profile"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/userName_edit_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="40dp"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit"
+                />
+            <Button
+                android:id="@+id/userName_save_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@drawable/save"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_layout"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="About : "
+            android:layout_marginLeft="30dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/userName_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/about_TV_profile"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:hint="about   "
+                />
+            <EditText
+                android:id="@+id/about_ET_profile"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/userName_layout"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/about_edit_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit"
+                />
+
+            <Button
+                android:id="@+id/about_save_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@drawable/save"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

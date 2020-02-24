@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    tools:context=".Messeging.MessageActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messeges_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendLayout"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="15dp">
+    </android.support.v7.widget.RecyclerView>
+    
+    <RelativeLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+
+        <EditText
+            android:id="@+id/messageToBeSend_id"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_bg3"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Type message here.."
+            android:layout_toLeftOf="@+id/selectImage_btn"
+            android:layout_alignParentStart="true"
+            />
+        <ImageButton
+            android:id="@+id/selectImage_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/picture"
+            android:layout_toLeftOf="@+id/sendButton_id"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/sendButton_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/send4"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:background="#1083B6"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/friends_Pic_messages"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/profile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+        <!-- circle crop
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/circle_crop2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+        -->
+
+        <TextView
+            android:id="@+id/friends_name_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/friends_Pic_messages"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:id="@+id/currentStatus_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="34dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/friends_Pic_messages"
+            android:layout_marginLeft="28dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageDisplay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/sendImage_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/send4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:id="@+id/displaySelectedImage_chat"
+            android:layout_above="@+id/sendImage_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/picture"
+            />
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit_sendImage"
+        style="@style/SpinKitView.Large.ChasingDots"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#B2FF59" />
+
+</RelativeLayout>

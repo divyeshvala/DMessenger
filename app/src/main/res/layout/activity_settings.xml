@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF4F8"
+    tools:context=".Settings.SettingsActivity">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FDFDFD"
+        android:background="#026EA0"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+    <RelativeLayout
+        android:id="@+id/profile_settings"
+        android:layout_below="@id/settings_title"
+        android:layout_width="match_parent"
+        android:background="@drawable/input_bg1"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_profile"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/user"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/icon_profile"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change name, Profie pic, status"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="34dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/icon_profile"
+            android:layout_marginLeft="27dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_settings"
+        android:layout_below="@+id/profile_settings"
+        android:layout_width="match_parent"
+        android:background="@drawable/input_bg1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_account"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/account"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/icon_account"
+            android:text="Account"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change number"
+            android:textColor="#fff"
+            android:layout_marginTop="34dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/icon_account"
+            android:layout_marginLeft="27dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inviteAFriend_settings"
+        android:layout_below="@+id/account_settings"
+        android:layout_width="match_parent"
+        android:background="@drawable/input_bg1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_inviteAFriend"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/friends"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:id="@+id/friends_name_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite a friend"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:layout_toRightOf="@+id/icon_inviteAFriend"
+            android:layout_marginLeft="25dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logOut_settings"
+        android:layout_below="@+id/inviteAFriend_settings"
+        android:layout_width="match_parent"
+        android:background="@drawable/input_bg1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_logout"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/logout2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="19sp"
+            android:layout_toRightOf="@+id/icon_logout"
+            android:layout_marginLeft="25dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

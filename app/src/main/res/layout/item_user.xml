@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_user_layout"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/input_bg2"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/profile_pic_userList"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile"
+            />
+           <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/circle_crop"
+            />
+        <TextView
+            android:id="@+id/userName_userList"
+            android:textColor="#252424"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/phone_usersList"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#4B4949"
+            android:text="Something else"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            />
+
+        <ImageView
+            android:id="@+id/is_message_received"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
